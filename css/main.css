@@ -9,6 +9,13 @@ a {
     text-decoration: none;
 }
 
+.yellow{
+	background: #D19164;
+}
+
+.brown{
+	background: #B19054;
+}
 
 /*----------NAVBAR------------*/
 
@@ -71,7 +78,6 @@ section {
 .borderlane {
     width: 100%;
     height: 20%;
-    background-color: #D19164;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +99,12 @@ section {
     padding-top: 5%;
 }
 
+.brown>p {
+	color: rgba(255,255,255,0.6);
+	font-size: 24px;
+	font-weight: 100;
+	padding: 5%;
+}
 
 /*----------HOME SECTION------------*/
 
