@@ -53,7 +53,8 @@ nav>ul>li {
     height: 100%;
 }
 
-nav>ul>li>a {
+nav>ul>li>a{
+
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     width: 100%;
@@ -65,14 +66,19 @@ nav>ul>li>a {
     align-items: center;
 }
 
-nav>ul>li>a:hover {
+nav>ul>li>a:hover{
     background-color: #F6DFD9;
     color: rgba(0, 0, 0, 0.7);
     font-weight: 400;
 }
 
+nav>ul>li>a:active{
+    background-color: lightgray;
+
+}
+
 section {
-    height: 100%;
+    height: 95%;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -124,6 +130,7 @@ section {
 
 .home {
     background-image: url("../img/section1.jpg");
+    height: 100%;
 }
 
 .jumboContainer {
@@ -171,6 +178,11 @@ section {
     background-color: white;
     color: black;
     font-weight: 400;
+}
+
+.jumbotron>a:active{
+    background-color: lightgray;
+    border-color: lightgray;
 }
 
 
@@ -224,7 +236,40 @@ section {
 
 .about {
     background-image: url("../img/about.jpg");
-    -webkit-filter: saturate(180%) blur(15px);
-    filter: saturate(180%) blur(15px)
-    overflow: scroll;
+}
+
+.about>.container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about>.container>.info {
+    padding: 4%;
+    width: 80%;
+    /*height: 60%;*/
+    max-width: 100%;
+    text-align: center;
+}
+
+.aboutLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutLinks>a{
+    width: 100px;
+    margin: 1.5%;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    color: white;
+    padding: 7px 10px 7px 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.aboutLinks>a:hover{
+    background-color: blue;
 }
